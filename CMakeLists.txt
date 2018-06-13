@@ -400,7 +400,7 @@ endif()
 
 if(WIN32)
 	if (BUILD_STATIC)
-		target_link_libraries(cryptopp-static ws2_32)
+		target_link_libraries(cryptopp-static ws2_32 legacy_stdio_definitions)
 	endif()
 	if (BUILD_SHARED)
 		target_link_libraries(cryptopp-shared ws2_32)
